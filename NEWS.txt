@@ -1,0 +1,15 @@
+2008-11-16 osgModeling 0.1.1 Released
+
+  * New polygon mesh generator to convert any geometries to vertices-edges-faces list.
+  * New subdivision classes to support Loop and Sqrt(3) methods to subdivide polygon meshes.
+  * New normal generator to generate normal arrays using different mean weights (MWE, MWA, MWSELR, MWAAT, MWELR, MWRELR).
+  * New osgdb_osgmodeling plugin for read/write osgModeling objects in .osg files. Only a framework at present.
+  * Support for creating the document and .chm help file based on doxygen.
+
+2008-11-4 osgModeling 0.1.0 Released
+
+  * Support for 4 kinds of curves: k-degree Bezier, k-degree NURBS, helix (3-dimensional spiral curves resembling a spring.) and user customized curves. 
+  * Support for 6 kinds of surfaces: m,n-degree Bezier, m,n-degree NURBS, extrusions (constructed by a profile extruded along a path), revolutions (constructed by a profile rotated specified angles), lofts (constructed by lofting a series of curves that define the cross section on a specified path) and user customized models. 
+  * Generate normal arrays and texture coordinate arrays for various models (except user customizations). You may also define customized algorithms to created vertices arrays, normal arrays and texture coordinate arrays for own models. All models can be added to geodes and displayed in the OSG scene graph. 
+  * Construct the binary space partitioning (BSP) trees for models created by classes above or converted from osg::Geometry. 
+  * Boolean operations (Intersection, Union and Difference) based on BSP trees of models. Vertices data of generated boolean objects will be stored in osg::Geometry instances. 

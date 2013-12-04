@@ -1,0 +1,4 @@
+osgModeling 0.1.0
+
+-----------------
+Wang Rui <wangray84@gmail.com>

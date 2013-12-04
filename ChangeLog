@@ -1,0 +1,47 @@
+2008-11-17 Wang Rui (r14)
+
+  * Fix compatibility problem
+  * Ready to release 0.1.1
+
+2008-11-16 Wang Rui (r13)
+
+  * Improve the osgmodelingsubd example
+  * Small fixes and upgrade to 0.1.1
+
+2008-11-14 Wang Rui (r11, r12)
+
+  * Add new osgdb_osgmodeling project to support osgModeling in .osg/.format
+  * Add new low-res polygon models data for testing subdivision
+  * Modify CMakeLists.txt to support generating doxygen documentation
+
+2008-11-13 Wang Rui (r10)
+
+  * Improve LoopSubdivision class to support subdividing levels
+  * Implement Sqrt3Subdivision class
+
+2008-11-12 Wang Rui (r9)
+
+  * Rewrite PolyMesh::Edge and associated functions
+  * Implement LoopSubdivision class
+
+2008-11-10 Wang Rui (r8)
+
+  * Rewrite PolyMesh class
+  * Add Subdivision headers
+  * Prepare the LoopSubdivision class
+  * Add new osgmodelingsubd example but not finished
+  * Add enum for NormalVisitor
+
+2008-11-7 Wang Rui (r7)
+
+  * NormalVisitor implements 6 methods to calculate normals, with some parameters.
+
+2008-11-6 Wang Rui (r6)
+
+  * Add NormalVisitor and TexCoordVisitor headers
+  * Add setNormalGenerator() and setTexCoordGenerator() for Model
+  * Migrate current normal creating code from ModelVisitor to NormalVisitor
+
+2008-11-4 Wang Rui (r5)
+
+  * Release 0.1.0
