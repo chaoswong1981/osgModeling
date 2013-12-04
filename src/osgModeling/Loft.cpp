@@ -210,6 +210,16 @@ void Loft::updateImplementation()
         else newZ = (*pts)[i-1] - (*pts)[i+1];
         newZ.normalize();
 
+		if (i!=0 && i!=knots-1)
+		{
+			osg::Vec3 tmp = (*pts)[i+1] - (*pts)[i];
+			tmp.normalize();
+			tmp = (*pts)[i] + tmp * ((*pts)[i] - (*pts)[i-1]).length();
+
+			newZ = (*pts)[i-1] - tmp;
+			newZ.normalize();
+		}
+
         // Calculate actual position of the current section from the shape list.
         osg::Vec3Array* array = dynamic_cast<osg::Vec3Array*>( curve->getPath() );
         shapeSize = array->size();
